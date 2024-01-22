@@ -363,6 +363,19 @@ h6 {
     color: var(--color-white);
 }
 
+.plaintext-button {
+    display: inline;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: var(--color-primary);
+}
+
+.inline-form {
+    display: inline;
+}
+
 /* Messages */
 .messages-container {
     display: flex;

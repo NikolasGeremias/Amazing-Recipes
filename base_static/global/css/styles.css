@@ -80,6 +80,15 @@ h6 {
     font-family: var(--font-headings);
 }
 
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
 .container {
     max-width: 144rem;
     margin: 0 auto;
@@ -343,7 +352,9 @@ h6 {
     color: var(--color-error-dark);
 }
 
-.form-content input {
+.form-content input,
+.form-content textarea,
+.form-content select {
     width: 100%;
     padding: 1rem;
     border-radius: .4rem;
@@ -376,6 +387,10 @@ h6 {
     display: inline;
 }
 
+.span-2 {
+    grid-column: span 2;
+}
+
 /* Messages */
 .messages-container {
     display: flex;
@@ -388,48 +403,71 @@ h6 {
     border: 1px solid var(--color-dark-text);
     background: var(--color-gray-2);
     color: calc(var(--color-dark-text) / 2);
-  }
+}
   
-  .message-error {
+.message-error {
     border: 1px solid var(--color-error-dark);
     background: var(--color-error-light);
     color: var(--color-error-dark);
-  }
+}
   
-  .message-success {
+.message-success {
     border: 1px solid var(--color-success-dark);
     background: var(--color-success-light);
     color: var(--color-success-dark);
-  }
+}
   
-  .message-warning {
+.message-warning {
     border: 1px solid var(--color-warning-dark);
     background: var(--color-warning-light);
     color: var(--color-warning-dark);
-  }
+}
   
-  .message-alert {
+.message-alert {
     border: 1px solid var(--color-alert-dark);
     background: var(--color-alert-light);
     color: var(--color-alert-dark);
-  }
+}
   
-  .message-info {
+.message-info {
     border: 1px solid var(--color-info-dark);
     background: var(--color-info-light);
     color: var(--color-info-dark);
-  }
+}
   
-  .message-debug {
+.message-debug {
     border: 1px solid var(--color-debug-dark);
     background: var(--color-debug-light);
     color: var(--color-debug-dark);
-  }
+}
+
+/* Authors */
+.login-message {
+    margin: 1rem 0;
+}
+
+.authors-dashboard-container{
+    max-width: 64rem;
+    text-align: left;
+    padding: var(--spacing-gutter-medium);
+    margin: 0 auto;
+}
+
+.authors-dashboard-container h3,
+.authors-dashboard-container p,
+.authors-dashboard-container ul {
+    list-style-type: none;
+    margin: 1rem 0;
+}
 
 /* Generics */
 
 .center {
     text-align: center;
+}
+
+.left {
+    text-align: left;
 }
 
 .m-x {

@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 
 from django.contrib.messages import constants
+# flake8: noqa
 from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,8 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'INSECURE')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if os.environ.get('DEBUG') == '1' else False
 
-ALLOWED_HOSTS = []  # type: ignore
-
+ALLOWED_HOSTS: list[str] = ['*']
 
 # Application definition
 

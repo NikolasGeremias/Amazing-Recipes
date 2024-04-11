@@ -1,5 +1,3 @@
-Aplicação Full stack de um site de receitas utilizando python e django framework
-
 # Amazing Recipes 
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/NikolasGeremias/Amazing-Recipes/blob/main/LICENSE) 

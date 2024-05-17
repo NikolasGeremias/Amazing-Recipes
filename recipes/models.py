@@ -3,6 +3,8 @@ from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
 
+from tag.models import Tag
+
 
 class Category(models.Model):
     name = models.CharField(max_length=65)
@@ -33,6 +35,7 @@ class Recipe(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.SET_NULL, null=True
     )
+    tags = models.ManyToManyField(Tag)
 
     def save(self, *args, **kwargs):
         if not self.slug:

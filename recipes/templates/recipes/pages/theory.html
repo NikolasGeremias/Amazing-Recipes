@@ -7,5 +7,10 @@
 </head>
 <body>
     <h1>THEORY</h1>
+    {% for recipe in recipes %}
+        <li>{{ recipe.id }} {{ recipe.title }}</li>
+    {% empty %}
+    
+    {% endfor %}
 </body>
 </html>
